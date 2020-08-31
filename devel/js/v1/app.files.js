@@ -104,7 +104,7 @@ define(["require", "exports", "localforage", "dateformat", "./app", "../utils"],
     var fileTreeCont;
     function initFileTree() {
         fileTreeCont = app_1.app.ui.fileTreeCont.find(".fileTree");
-        if (!kaitaiRoot.children["formats"]) {
+        if (!kaitaiRoot.children["formats"]) { 
             console.error("'formats' node is missing from js/kaitaiFsFiles.js, are you sure 'formats' git submodule is initialized? Try run 'git submodule init; git submodule update --recursive; ./genKaitaiFsFiles.py'!");
             kaitaiRoot.children["formats"] = {};
         }
@@ -122,19 +122,19 @@ define(["require", "exports", "localforage", "dateformat", "./app", "../utils"],
                     {
                         text: "kaitai.io",
                         icon: "glyphicon glyphicon-cloud",
-                        state: { opened: true },
+                        state: { opened: false },
                         children: [
                             {
                                 text: "formats",
                                 icon: "glyphicon glyphicon-book",
                                 children: genChildNodes(kaitaiRoot.children["formats"]),
-                                state: { opened: true }
+                                state: { opened: false }
                             },
                             {
                                 text: "samples",
                                 icon: "glyphicon glyphicon-cd",
                                 children: genChildNodes(kaitaiRoot.children["samples"]),
-                                state: { opened: true }
+                                state: { opened: false }
                             },
                         ]
                     },

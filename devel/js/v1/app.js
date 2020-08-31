@@ -210,7 +210,7 @@ define(["require", "exports", "localforage", "vue", "./app.layout", "./app.files
         async function loadCachedFsItem(cacheKey, defFsType, defSample) {
             let fsItem = await localforage.getItem(cacheKey);
             await exports.app.loadFsItem(fsItem || { fsType: defFsType, fn: defSample, type: "file" }, false);
-        }
+        } 
         exports.app.inputReady = loadCachedFsItem("inputFsItem", "kaitai", "samples/sample1.zip");
         exports.app.formatReady = loadCachedFsItem(exports.app.ksyFsItemName, "kaitai", "formats/archive/zip.ksy");
         exports.app.inputReady.then(() => {

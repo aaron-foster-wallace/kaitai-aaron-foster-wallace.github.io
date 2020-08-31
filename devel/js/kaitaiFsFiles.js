@@ -1,4 +1,4 @@
-var kaitaiFsFiles = [
+var kaitaiFsFiles = [ 
     "formats/archive/cpio_old_le.ksy",
     "formats/archive/gzip.ksy",
     "formats/archive/lzh.ksy",

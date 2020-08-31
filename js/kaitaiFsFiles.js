@@ -1,4 +1,8 @@
-var kaitaiFsFiles = [
+var kaitaiFsFiles = [ 
+    'hedgehog-kaitai/animation/uv-anim.ksy',
+    'hedgehog-kaitai/common/ieee754_float.ksy',
+    'hedgehog-kaitai/common/hedgelib_header_footer.ksy',
+    'hedgehog-kaitai/common/f2be.ksy',
     'formats/archive/cpio_old_le.ksy',
     'formats/archive/lzh.ksy',
     'formats/archive/rar.ksy',

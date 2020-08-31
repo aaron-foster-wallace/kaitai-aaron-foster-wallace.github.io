@@ -86,7 +86,7 @@ define(["require", "exports", "./../../FileSystem/GithubClient", "./../../FileSy
         addRootNode("kaitai-io/formats", "fa fa-github", "github://kaitai-io/kaitai_struct_formats/"),
         browserStorage,
         addRootNode("browser (legacy)", "glyphicon-cloud", "browser_legacy:///"),
-    ]);
+    ]); 
     nodeKaitaiIo.loadChildren().then(() => {
         nodeKaitaiIo.children[0].icon = "glyphicon-book";
         nodeKaitaiIo.children[1].icon = "glyphicon-cd";

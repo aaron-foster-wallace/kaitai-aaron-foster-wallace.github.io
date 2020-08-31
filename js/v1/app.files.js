@@ -118,22 +118,28 @@ define(["require", "exports", "localforage", "dateformat", "./app", "../utils"],
                     {
                         text: "kaitai.io",
                         icon: "glyphicon glyphicon-cloud",
-                        state: { opened: true },
+                        state: { opened: false },
                         children: [
                             {
                                 text: "formats",
                                 icon: "glyphicon glyphicon-book",
                                 children: genChildNodes(kaitaiRoot.children["formats"]),
-                                state: { opened: true }
+                                state: { opened: false }
                             },
                             {
                                 text: "samples",
                                 icon: "glyphicon glyphicon-cd",
                                 children: genChildNodes(kaitaiRoot.children["samples"]),
-                                state: { opened: true }
+                                state: { opened: false }
                             },
                         ]
                     },
+                    {
+                        text: "hedgehog",
+                        icon: "glyphicon glyphicon-briefcase",
+                        children: genChildNodes(kaitaiRoot.children["hedgehog"]),
+                        state: { opened: true }
+                    },                    
                     {
                         text: "Local storage",
                         id: "localStorage",

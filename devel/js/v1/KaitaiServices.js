@@ -43,7 +43,7 @@ define(["require", "exports", "./app.files", "./utils/PerformanceHelper", "kaita
             if (loadFn.startsWith("/"))
                 loadFn = loadFn.substr(1);
             if (this.rootFsItem.fsType === "kaitai" && mode === "abs")
-                loadFn = "/formats/" + loadFn;
+                loadFn = "/formats/" + loadFn;  
             console.log(`import yaml: ${name}, mode: ${mode}, loadFn: ${loadFn}, root:`, this.rootFsItem);
             let ksyContent = await app_files_1.fss[this.rootFsItem.fsType].get(`${loadFn}.ksy`);
             var ksyModel = YAML.parse(ksyContent);
