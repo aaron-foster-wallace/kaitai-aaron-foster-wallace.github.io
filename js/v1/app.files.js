@@ -124,7 +124,7 @@ define(["require", "exports", "localforage", "dateformat", "./app", "../utils"],
                                 text: "formats",
                                 icon: "glyphicon glyphicon-book",
                                 children: genChildNodes(kaitaiRoot.children["formats"]),
-                                state: { opened: false }
+                                state: { opened: true }
                             },
                             {
                                 text: "samples",
@@ -134,12 +134,7 @@ define(["require", "exports", "localforage", "dateformat", "./app", "../utils"],
                             },
                         ]
                     },
-                    {
-                        text: "hedgehog_kaitai",
-                        icon: "glyphicon glyphicon-briefcase",
-                        children: genChildNodes(kaitaiRoot.children["hedgehog-kaitai"]),
-                        state: { opened: true }
-                    },                    
+                  
                     {
                         text: "Local storage",
                         id: "localStorage",
