@@ -16,7 +16,7 @@ meta:
   file-extension: uv-anim
   endian: be
   imports:
-    - ../common/hedgelib_header_footer
+    - hedgelib_header_footer
 seq:
   - id: header
     type: hedgelib_header
