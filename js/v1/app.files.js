@@ -135,9 +135,9 @@ define(["require", "exports", "localforage", "dateformat", "./app", "../utils"],
                         ]
                     },
                     {
-                        text: "hedgehog",
+                        text: "hedgehog_kaitai",
                         icon: "glyphicon glyphicon-briefcase",
-                        children: genChildNodes(kaitaiRoot.children["hedgehog"]),
+                        children: genChildNodes(kaitaiRoot.children["hedgehog-kaitai"]),
                         state: { opened: true }
                     },                    
                     {
